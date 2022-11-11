@@ -5,6 +5,7 @@ import TimelineIcon from '@mui/icons-material/Timeline';
 import ArticleIcon from '@mui/icons-material/Article';
 import AssessmentIcon from '@mui/icons-material/Assessment';
 import ManageAccountsIcon from '@mui/icons-material/ManageAccounts';
+
 export default function Sidebar() {
   return (
     <div className='sidebar'>
