@@ -3,14 +3,17 @@ import './Topbar.css'
 import CircleNotificationsIcon from '@mui/icons-material/CircleNotifications';
 import GTranslateIcon from '@mui/icons-material/GTranslate';
 import SettingsIcon from '@mui/icons-material/Settings';
+import { Link } from 'react-router-dom';
 export default function Topbar() {
   return (
     <div className='topbar'>
         <div className="topbarWrapper">
             <div className="left">
-                <span className="logo">
-                    LGOR
-                </span>
+              <Link to="/">
+                  <span className="logo">
+                      LGOR
+                  </span>
+              </Link>
             </div>
             <div className="right">
                 <div className="topbarIconContainer">

@@ -5,6 +5,7 @@ import TimelineIcon from '@mui/icons-material/Timeline';
 import ArticleIcon from '@mui/icons-material/Article';
 import AssessmentIcon from '@mui/icons-material/Assessment';
 import ManageAccountsIcon from '@mui/icons-material/ManageAccounts';
+import { Link } from 'react-router-dom';
 
 export default function Sidebar() {
   return (
@@ -15,10 +16,12 @@ export default function Sidebar() {
                     Dashboard
                 </h3>
                 <ul className="sidebarList">
-                    <li className="sidebarListItem">
-                        <LineStyleIcon className='sidebarIcon'/>
-                        Home
-                    </li>
+                    <Link to="/">
+                        <li className="sidebarListItem">
+                            <LineStyleIcon className='sidebarIcon'/>
+                            Home
+                        </li>
+                    </Link>
                     <li className="sidebarListItem">
                         <TimelineIcon  className='sidebarIcon'/>
                         Analytics
@@ -37,6 +40,23 @@ export default function Sidebar() {
                     <li className="sidebarListItem">
                         <AssessmentIcon  className='sidebarIcon'/>
                         Sales
+                    </li>
+                </ul>
+            </div>
+            <div className="sidebarMenu">
+                <h3 className="sidebarTtile">
+                    Users
+                </h3>
+                <ul className="sidebarList">
+                    <Link to="/users">
+                        <li className="sidebarListItem">
+                            <ManageAccountsIcon className='sidebarIcon'/>
+                            Users List
+                        </li>
+                    </Link>
+                    <li className="sidebarListItem">
+                        <TimelineIcon  className='sidebarIcon'/>
+                        Analytics
                     </li>
                 </ul>
             </div>

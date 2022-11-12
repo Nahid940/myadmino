@@ -1,5 +1,6 @@
 import React from 'react'
 import { DataGrid } from '@mui/x-data-grid';
+import { Link } from 'react-router-dom';
 
 
 const columns = [
@@ -38,10 +39,11 @@ const columns = [
 export default function Userlist() {
   return (
     <div className='userList'>
+        <Link to="/">Home</Link>
         <DataGrid
             rows={rows}
             columns={columns}
-            pageSize={5}
+            pageSize={10}
             rowsPerPageOptions={[5]}
             checkboxSelection
         />
